@@ -24,16 +24,16 @@ The derivative of a function represents the rate at which it changes. The deriva
  ## $$f'(a) = \lim\limits_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
 
 This measures the slope of the tangent line to the function at that point. Common derivative rules include:
-- Power rule: \( \frac{d}{dx} x^n = n x^{n-1} \)
-- Product rule: \( (uv)' = u'v + uv' \)
-- Quotient rule: \( \left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2} \)
-- Chain rule: \( (f(g(x)))' = f'(g(x))g'(x) \)
+- Power rule: $$\( \frac{d}{dx} x^n = n x^{n-1} \)$$
+- Product rule:$$\( (uv)' = u'v + uv' \)$$
+- Quotient rule: $$\( \left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2} \)$$
+- Chain rule: $\( (f(g(x)))' = f'(g(x))g'(x) \)$
 
 ## 4. Integrals: Accumulation and Area
 Integration is the process of finding the **antiderivative** of a function or calculating the **area under a curve**. The **definite integral** from \( a \) to \( b \) is written as:
-\[
- \int_a^b f(x)dx
-\]
+
+ # $$\int_a^b f(x)dx$$
+
 This represents the total accumulation of the function between \( a \) and \( b \). Common integration rules include:
 - Power rule: \( \int x^n dx = \frac{x^{n+1}}{n+1} + C \) (for \( n \neq -1 \))
 - Substitution method: Used to simplify complex integrals
@@ -41,14 +41,14 @@ This represents the total accumulation of the function between \( a \) and \( b 
 
 ## 5. Fundamental Theorem of Calculus
 The **Fundamental Theorem of Calculus** links derivatives and integrals:
-1. If \( F(x) \) is an antiderivative of \( f(x) \), then:
-\[
- \int_a^b f(x)dx = F(b) - F(a)
-\]
+1. If $\( F(x) \)$ is an antiderivative of $\( f(x) \)$, then:
+
+ # $$\int_a^b f(x)dx = F(b) - F(a)$$
+
 2. Differentiation and integration are inverse operations:
-\[
- \frac{d}{dx} \int_a^x f(t)dt = f(x)
-\]
+
+ # $$\frac{d}{dx} \int_a^x f(t)dt = f(x)$$
+
 
 ## 6. Applications of Calculus
 Calculus is used in various fields to model and solve problems involving change and accumulation:
