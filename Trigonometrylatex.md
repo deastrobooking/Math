@@ -271,3 +271,158 @@ $$x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k e^{i 2\pi k n / N}$$
 ---
 
 🚀
+
+## **Deep Dive into Fourier Analysis: Five Key Topics**  
+
+This guide provides an **in-depth exploration** of Fourier Analysis, covering all five core topics:  
+1. **Fourier Series** (for periodic signals)  
+2. **Fourier Transform** (for continuous signals)  
+3. **Discrete Fourier Transform (DFT)** (for sampled signals)  
+4. **Fast Fourier Transform (FFT)** (for efficient computation)  
+5. **Frequency Domain Concepts** (interpretations and applications)  
+
+---
+
+## **1. Fourier Series (Periodic Functions)**
+The **Fourier Series** expresses a periodic function \( f(x) \) as a **sum of sines and cosines**.  
+
+### **General Formula**
+For a function with period \( 2L \):
+```latex
+$$f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n\pi x}{L} + b_n \sin \frac{n\pi x}{L} \right)$$
+```
+**Rendered as:**  
+$$f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos \frac{n\pi x}{L} + b_n \sin \frac{n\pi x}{L} \right)$$  
+
+### **Fourier Coefficients**
+To compute \( a_0 \), \( a_n \), and \( b_n \):
+
+```latex
+$$a_0 = \frac{1}{L} \int_{-L}^{L} f(x) \, dx$$
+$$a_n = \frac{1}{L} \int_{-L}^{L} f(x) \cos \frac{n\pi x}{L} \, dx$$
+$$b_n = \frac{1}{L} \int_{-L}^{L} f(x) \sin \frac{n\pi x}{L} \, dx$$
+```
+
+### **Key Concepts**
+- The **more harmonics** (higher \( n \)) included, the better the approximation.  
+- The **Fourier Series converges** to \( f(x) \) if \( f(x) \) is piecewise continuous.  
+- If \( f(x) \) is **odd**, only sine terms appear (\( b_n \)); if **even**, only cosine terms (\( a_n \)).  
+
+---
+
+## **2. Fourier Transform (Continuous-Time Signals)**  
+
+The **Fourier Transform** (FT) converts a **time-domain** function into its **frequency-domain** representation.  
+
+### **Definition**
+```latex
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt$$
+```
+**Rendered as:**  
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt$$  
+
+The **Inverse Fourier Transform** converts back to the time domain:
+
+```latex
+$$f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) e^{i \omega t} d\omega$$
+```
+**Rendered as:**  
+$$f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} F(\omega) e^{i \omega t} d\omega$$  
+
+### **Key Properties**
+1. **Linearity**:  
+   ```latex
+   $$\mathcal{F} \{ a f(t) + b g(t) \} = a F(\omega) + b G(\omega)$$
+   ```
+2. **Time Scaling**:  
+   ```latex
+   $$\mathcal{F} \{ f(at) \} = \frac{1}{|a|} F\left(\frac{\omega}{a}\right)$$
+   ```
+3. **Shifting**:  
+   ```latex
+   $$\mathcal{F} \{ f(t - t_0) \} = e^{-i\omega t_0} F(\omega)$$
+   ```
+
+### **Example: Fourier Transform of a Rectangular Pulse**
+For a pulse:
+```latex
+$$f(t) = 
+\begin{cases}
+1, & |t| \leq T \\
+0, & \text{otherwise}
+\end{cases}$$
+```
+Its Fourier Transform is a **sinc function**:
+```latex
+$$F(\omega) = 2T \frac{\sin(\omega T)}{\omega T} = 2T \text{sinc}(\omega T)$$
+```
+This shows how **narrow pulses have wide frequency spectra**.
+
+---
+
+## **3. Discrete Fourier Transform (DFT)**
+The **Discrete Fourier Transform** (DFT) analyzes **finite-length discrete signals**.
+
+### **DFT Formula**
+For a sequence \( x_n \) of length \( N \):
+
+```latex
+$$X_k = \sum_{n=0}^{N-1} x_n e^{-i 2\pi k n / N}$$
+```
+**Rendered as:**  
+$$X_k = \sum_{n=0}^{N-1} x_n e^{-i 2\pi k n / N}$$  
+
+### **Inverse DFT**
+```latex
+$$x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k e^{i 2\pi k n / N}$$
+```
+**Rendered as:**  
+$$x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k e^{i 2\pi k n / N}$$  
+
+### **Key Features**
+- The **DFT converts time-domain samples into frequency components**.
+- Unlike the Fourier Transform, it **operates on discrete data**.
+- The DFT **assumes periodicity** of the input signal.
+
+---
+
+## **4. Fast Fourier Transform (FFT)**
+The **FFT** is an efficient algorithm for computing the **DFT**.
+
+### **Why Use FFT?**
+- A **direct computation** of the DFT requires **\( O(N^2) \)** operations.  
+- The **FFT reduces complexity to \( O(N \log N) \)**, making it **significantly faster**.  
+- The **Cooley-Tukey algorithm** recursively splits the DFT into smaller parts.
+
+### **FFT Algorithm Steps**
+1. Divide the **DFT** computation into even and odd indices.  
+2. Use the **butterfly operation** to merge results efficiently.  
+3. Recursively apply the FFT until reaching base cases.  
+
+---
+
+## **5. Frequency Domain Concepts**
+Fourier analysis transforms signals from the **time domain** to the **frequency domain**.
+
+### **Key Symbols in Frequency Analysis**
+| Symbol | Meaning |
+|--------|---------|
+| \( \omega \) | Angular frequency (\( 2\pi f \)) |
+| \( T \) | Period of the signal |
+| \( \lambda \) | Wavelength of a wave |
+| \( \delta (t) \) | Dirac delta function (impulse) |
+| \( \text{sinc}(x) = \frac{\sin(\pi x)}{\pi x} \) | Sinc function, important in sampling |
+| \( |F(\omega)| \) | Magnitude spectrum |
+| \( \arg(F(\omega)) \) | Phase spectrum |
+
+### **Example: Sampling Theorem**
+A continuous signal \( f(t) \) can be **perfectly reconstructed** if sampled at a rate \( f_s \) satisfying:
+
+```latex
+$$f_s \geq 2 f_{\max}$$
+```
+This is the **Nyquist-Shannon Sampling Theorem**.
+
+---
+
+ 🚀
