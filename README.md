@@ -1,5 +1,9 @@
 # 
 
+-[Integration Desmos Examples](https://help.desmos.com/hc/en-us/articles/4406810279693-Integrals)\
+-[RJC DESMOS Integration](https://www.desmos.com/3d/c3azlc0i5x)\
+-[TI Calculus and Parametric Equations](https://education.ti.com/html/t3_free_courses/calculus84_online/mod25/mod25_lesson2.html#:~:text=Finding%20First%20Derivatives&text=Recall%20that%20and%20that%20dy,y%20with%20respect%20to%20x.)\
+
 # Introduction to Calculus
 
 Calculus is a branch of mathematics that studies how things change. It provides a framework for modeling systems in which change occurs and is fundamental to many areas of science, engineering, and economics. The two main branches of calculus are **differential calculus** and **integral calculus**.
