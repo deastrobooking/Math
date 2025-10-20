@@ -1,0 +1,18 @@
+[package]
+name = "math_calculators"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "calculus_calculator"
+path = "calculus_calculator.rs"
+
+[[bin]]
+name = "algebra_calculator"
+path = "algebra_calculator.rs"
+
+[[bin]]
+name = "statistics_calculator"
+path = "statistics_calculator.rs"
+
+[dependencies]

@@ -1,8 +1,46 @@
-# 
+# Mathematics Learning Repository
 
--[Integration Desmos Examples](https://help.desmos.com/hc/en-us/articles/4406810279693-Integrals)\
--[RJC DESMOS Integration](https://www.desmos.com/3d/c3azlc0i5x)\
--[TI Calculus and Parametric Equations](https://education.ti.com/html/t3_free_courses/calculus84_online/mod25/mod25_lesson2.html#:~:text=Finding%20First%20Derivatives&text=Recall%20that%20and%20that%20dy,y%20with%20respect%20to%20x.)\
+A comprehensive mathematics learning resource featuring theoretical concepts via markdown and practical calculator implementations in multiple programming languages.
+
+## 🔗 External Resources
+
+- [Integration Desmos Examples](https://help.desmos.com/hc/en-us/articles/4406810279693-Integrals)
+- [RJC DESMOS Integration](https://www.desmos.com/3d/c3azlc0i5x)
+- [TI Calculus and Parametric Equations](https://education.ti.com/html/t3_free_courses/calculus84_online/mod25/mod25_lesson2.html#:~:text=Finding%20First%20Derivatives&text=Recall%20that%20and%20that%20dy,y%20with%20respect%20to%20x.)
+
+## 🧮 Calculator Software Examples
+
+This repository now includes **practical programming examples** that demonstrate mathematical concepts through code!
+
+### Languages Supported
+- 🐍 **Python** - Easy to understand, great for learning
+- 🦀 **Rust** - Modern, safe systems programming
+- ⚡ **C++** - Object-oriented, high performance
+- 🔧 **C** - Fundamental, low-level understanding
+
+### Available Calculators
+- **Calculus**: Derivatives, integrals, limits, critical points
+- **Algebra**: Quadratic equations, polynomials, sequences
+- **Statistics**: Mean, median, correlation, regression
+
+### Quick Start
+```bash
+# Python
+cd calculators/python && python3 calculus_calculator.py
+
+# Rust
+cd calculators/rust && cargo run --bin calculus_calculator
+
+# C++
+cd calculators/cpp && g++ -std=c++17 calculus_calculator.cpp -o calc && ./calc
+
+# C
+cd calculators/c && gcc -lm calculus_calculator.c -o calc && ./calc
+```
+
+📖 **See [calculators/USAGE.md](calculators/USAGE.md) for detailed instructions**
+
+---
 
 # Introduction to Calculus
 
