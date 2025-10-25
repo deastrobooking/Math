@@ -44,7 +44,7 @@ ax^2 + bx + c = 0
 
 **Solution via quadratic formula:**
 \[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
 \]
 
 **Vertex form:**
