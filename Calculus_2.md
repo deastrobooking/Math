@@ -8,10 +8,10 @@
 Find a function \( F(x) \) such that \( F'(x) = f(x) \)
 
 ### 🔹 Basic Rules:
-- $$ \int x^n dx = \frac{x^{n+1}}{n+1} + C \quad (n \ne -1) $$
-- $$ \int e^x dx = e^x + C $$
-- $$ \int \sin x dx = -\cos x + C $$
-- $$ \int \cos x dx = \sin x + C $$
+- $\int x^n dx = \frac{x^{n+1}}{n+1} + C \quad (n \ne -1)$
+- $\int e^x dx = e^x + C$
+- $\int \sin x dx = -\cos x + C$
+- $\int \cos x dx = \sin x + C$
 
 ### 🔹 EE Application:
 Total **charge** from **current**:
@@ -24,7 +24,7 @@ $$
 ## 📗 **2. Definite Integrals and the Fundamental Theorem**
 
 ### 🔹 Fundamental Theorem of Calculus (Part 1)
-If $$ F(x) $$ is an antiderivative of $$ f(x) $$, then:
+If $F(x)$ is an antiderivative of $f(x)$, then:
 $$
 \frac{d}{dx} \left( \int_a^x f(t) dt \right) = f(x)
 $$
@@ -167,7 +167,7 @@ $$
 $$
 
 ### 🔸 b. **Tests for Convergence**
-- **Divergence Test**: If $$ \lim a_n \ne 0 $$, diverges
+- **Divergence Test**: If $\lim a_n \ne 0$, diverges
 - **Integral Test**
 - **Comparison Test**
 - **Limit Comparison Test**
@@ -182,7 +182,7 @@ $$
 \sum_{n=0}^\infty c_n(x - a)^n
 $$
 
-Has **radius of convergence** $$ R $$
+Has **radius of convergence** $R$
 
 ---
 
@@ -207,21 +207,21 @@ $$
 f(x) = \sqrt{x}, \quad g(x) = x^2
 $$
 
-The area between them from $$ x = 0 $$ to $$ x = 1 $$ is:
+The area between them from $x = 0$ to $x = 1$ is:
 $$
 A = \int_0^1 (\sqrt{x} - x^2)\, dx
 $$
 
 **Diagram Insight:**
-- The **upper curve** is $$ \sqrt{x} $$
-- The **lower curve** is $$ x^2 $$
+- The **upper curve** is $\sqrt{x}$
+- The **lower curve** is $x^2$
 - The **shaded region** between them is the area we compute
 
 ---
 
 ### B. **Solids of Revolution – Disk & Washer Method**
 
-Imagine rotating $$ f(x) = \sqrt{x} $$ around the x-axis from $$ x = 0 $$ to $$ x = 4 $$.
+Imagine rotating $f(x) = \sqrt{x}$ around the x-axis from $x = 0$ to $x = 4$.
 
 **Disk Method Volume**:
 $$
@@ -254,7 +254,7 @@ $$
 F(x) = kx
 $$
 
-The work to compress a spring from $$ x = 0 $$ to $$ x = a $$ is:
+The work to compress a spring from $x = 0$ to $x = a$ is:
 $$
 W = \int_0^a kx\, dx = \frac{1}{2}ka^2
 $$
@@ -268,7 +268,7 @@ $$
 
 ### 🧮 **Problem 2: Arc Length**
 
-Find the arc length of $$ f(x) = \ln x $$ from $$ x = 1 $$ to $$ x = e $$.
+Find the arc length of $f(x) = \ln x$ from $x = 1$ to $x = e$.
 
 $$
 L = \int_1^e \sqrt{1 + \left(\frac{d}{dx} \ln x \right)^2} dx
@@ -283,10 +283,10 @@ This integral has no elementary solution, but it’s solvable numerically or app
 ### 🧮 **Problem 3: Volume – Washer Method**
 
 Region between:
-- Outer: $$ R(x) = \sqrt{x} $$
-- Inner: $$ r(x) = x/2 $$
+- Outer: $R(x) = \sqrt{x}$
+- Inner: $r(x) = x/2$
 
-Rotated around x-axis from $$ x = 0 $$ to $$ x = 4 $$
+Rotated around x-axis from $x = 0$ to $x = 4$
 
 $$
 V = \pi \int_0^4 \left[ (\sqrt{x})^2 - \left(\frac{x}{2}\right)^2 \right] dx = \pi \int_0^4 \left( x - \frac{x^2}{4} \right) dx
@@ -296,7 +296,7 @@ Step-by-step:
 1. Square both radii
 2. Subtract inner from outer
 3. Integrate the difference
-4. Multiply by $$ \pi $$
+4. Multiply by $\pi$
 
 ---
 

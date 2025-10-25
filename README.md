@@ -211,12 +211,12 @@ $$
 ---
 
 ## 8. Special Derivatives
-- $$\frac{d}{dx} e^x = e^x$$
-- $$\frac{d}{dx} a^x = a^x \ln a$$
-- $$\frac{d}{dx} \ln x = \frac{1}{x}$$
-- $$\frac{d}{dx} \sin x = \cos x$$
-- $$\frac{d}{dx} \cos x = -\sin x$$
-- $$\frac{d}{dx} \tan x = \sec^2 x$$
+- $\frac{d}{dx} e^x = e^x$
+- $\frac{d}{dx} a^x = a^x \ln a$
+- $\frac{d}{dx} \ln x = \frac{1}{x}$
+- $\frac{d}{dx} \sin x = \cos x$
+- $\frac{d}{dx} \cos x = -\sin x$
+- $\frac{d}{dx} \tan x = \sec^2 x$
 
 ---
 
@@ -318,7 +318,7 @@ $$
 #### 8. Integration by Substitution (u-Substitution)
 Used when the integral contains a composite function.
 
-If $$ u = g(x) $$, then:
+If $u = g(x)$, then:
 $$
 \int f(g(x)) g'(x) \, dx = \int f(u) \, du
 $$
@@ -327,7 +327,7 @@ Example:
 $$
 \int (2x) e^{x^2} \, dx
 $$
-Let $$ u = x^2 $$, then $$ du = 2x \, dx $$.
+Let $u = x^2$, then $du = 2x \, dx$.
 $$
 \int e^u \, du = e^u + C = e^{x^2} + C
 $$
@@ -344,8 +344,8 @@ Example:
 $$
 \int x e^x \, dx
 $$
-Let $$ u = x $$, so $$ du = dx $$
-Let $$ dv = e^x dx $$, so $$ v = e^x $$.
+Let $u = x$, so $du = dx$
+Let $dv = e^x dx$, so $v = e^x$.
 
 Applying the formula:
 $$
