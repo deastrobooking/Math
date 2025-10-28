@@ -5,17 +5,17 @@ Great! College Algebra covers the **fundamental building blocks of higher-level 
 ## 🔢 **1. Linear Equations**
 **General form:**  
 \[
-ax + b = 0
+$ax + b = 0$
 \]
 **Solution:**  
 \[
-x = -\frac{b}{a}, \quad a \neq 0
+$x = -\frac{b}{a}, \quad a \neq 0$
 \]
 
 **Graph:** Straight line  
 **Slope-intercept form:**  
 \[
-y = mx + b
+$y = mx + b$
 \]
 
 ---
@@ -24,9 +24,9 @@ y = mx + b
 ### Two variables:
 \[
 \begin{cases}
-a_1x + b_1y = c_1 \\
-a_2x + b_2y = c_2
-\end{cases}
+$a_1x + b_1y = c_1$ \\
+$a_2x + b_2y = c_2$
+\$end{cases}$
 \]
 
 **Solution methods:**
@@ -39,27 +39,27 @@ a_2x + b_2y = c_2
 ## 🔺 **3. Quadratic Equations**
 **Standard form:**
 \[
-ax^2 + bx + c = 0
+$ax^2 + bx + c = 0$
 \]
 
 **Solution via quadratic formula:**
 \[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
 \]
 
 **Vertex form:**
 \[
-y = a(x - h)^2 + k
+$y = a(x - h)^2 + k$
 \]
 
 **Discriminant:**
 \[
-D = b^2 - 4ac \Rightarrow
+$D = b^2 - 4ac \Rightarrow
 \begin{cases}
 > 0 & \text{2 real roots} \\
 = 0 & \text{1 real root} \\
 < 0 & \text{2 complex roots}
-\end{cases}
+\end{cases}$
 \]
 
 ---
@@ -67,20 +67,20 @@ D = b^2 - 4ac \Rightarrow
 ## 🔁 **4. Polynomial Equations**
 **General form:**
 \[
-P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0
+$P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0$
 \]
 
 **Key concepts:**
 - **Degree** = highest exponent
 - **Factoring techniques:** GCF, grouping, synthetic division, Rational Root Theorem
-- **Zeros/roots**: Solutions to \( P(x) = 0 \)
+- **Zeros/roots**: Solutions to $\( P(x) = 0 \)$
 
 ---
 
 ## 🔄 **5. Rational Equations**
 **Form:**
 \[
-\frac{P(x)}{Q(x)} = 0 \quad \text{or} \quad \frac{A(x)}{B(x)} = \frac{C(x)}{D(x)}
+$\frac{P(x)}{Q(x)} = 0 \quad \text{or} \quad \frac{A(x)}{B(x)} = \frac{C(x)}{D(x)}$
 \]
 
 **Key ideas:**
@@ -93,7 +93,7 @@ P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0
 ## ⛛ **6. Radical Equations**
 **General form:**
 \[
-\sqrt{f(x)} = g(x)
+$\sqrt{f(x)} = g(x)$
 \]
 
 **Solution method:**
@@ -108,22 +108,22 @@ P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0
 
 ### Exponential:
 \[
-a^x = b \Rightarrow x = \log_a b
+$a^x = b \Rightarrow x = \log_a b$
 \]
 
 **Properties:**
-- \( a^{x+y} = a^x \cdot a^y \)
-- \( (a^x)^y = a^{xy} \)
+- $\( a^{x+y} = a^x \cdot a^y \)$
+- $\( (a^x)^y = a^{xy} \)$
 
 ### Logarithmic:
 \[
-\log_a x = y \Rightarrow a^y = x
+$\log_a x = y \Rightarrow a^y = x$
 \]
 
 **Laws:**
-- \( \log(ab) = \log a + \log b \)
-- \( \log\left(\frac{a}{b}\right) = \log a - \log b \)
-- \( \log(a^n) = n \log a \)
+- $\( \log(ab) = \log a + \log b \)$
+- $\( \log\left(\frac{a}{b}\right) = \log a - \log b \)$
+- $\( \log(a^n) = n \log a \)$
 
 ---
 
@@ -131,12 +131,12 @@ a^x = b \Rightarrow x = \log_a b
 
 ### Equations:
 \[
-|x - a| = b \Rightarrow x - a = b \quad \text{or} \quad x - a = -b
+$|x - a| = b \Rightarrow x - a = b \quad \text{or} \quad x - a = -b$
 \]
 
 ### Inequalities:
-- \( |x| < a \Rightarrow -a < x < a \)
-- \( |x| > a \Rightarrow x < -a \text{ or } x > a \)
+- $\( |x| < a \Rightarrow -a < x < a \)$
+- $\( |x| > a \Rightarrow x < -a \text{ or } x > a \)$
 
 ---
 
